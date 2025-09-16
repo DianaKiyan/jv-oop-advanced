@@ -1,10 +1,10 @@
 package core.basesyntax;
 
-public class Rectangle extends Figure {
+public class Rectangle extends Figure implements AreaCalculator {
     private final double width;
     private final double height;
 
-    public Rectangle(Colors color, double width, double height) {
+    public Rectangle(String color, double width, double height) {
         super(color);
         this.width = width;
         this.height = height;
@@ -18,7 +18,8 @@ public class Rectangle extends Figure {
     @Override
     public void draw() {
         System.out.println("Figure: rectangle, area: " + getArea()
-                + " sq. units, width: " + width + " height: " + height
+                + " sq. units, width: " + width
+                + " units, height: " + height
                 + " units, color: " + getColor());
     }
 }
