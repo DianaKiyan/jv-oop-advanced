@@ -38,6 +38,6 @@ public class FigureSupplier extends ColorSupplier {
     }
 
     public Figure getDefaultFigure() {
-        return new Circle(Colors.WHITE.name().toLowerCase(), RANDOM_BOUND);
+        return new Circle(Color.WHITE.name().toLowerCase(), RANDOM_BOUND);
     }
 }
